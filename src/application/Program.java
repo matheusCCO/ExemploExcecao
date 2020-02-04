@@ -39,6 +39,8 @@ public class Program {
 			System.out.println("Invalid date format");
 		} catch(DomainException e) {
 			System.out.println("Error in revervation:"+ e.getMessage());
+		} catch(RuntimeException e) {
+			System.out.println("Unexpected error");
 		}
 		
 	sc.close();	
